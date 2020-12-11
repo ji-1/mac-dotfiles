@@ -38,6 +38,7 @@ PACKAGES=(
   koekeishiya/formulae/yabai
   koekeishiya/formulae/skhd
   github/gh/gh
+  gtypist
 )
 
 echo "Installing packages..."
@@ -64,6 +65,11 @@ APPLICATIONS=(
   docker
   ngrok
   wireshark
+  istat-menus
+  microsoft-office
+  microsoft-excel
+  microsoft-powerpoint
+  pock
 )
 
 echo "Installing applications..."

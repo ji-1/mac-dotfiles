@@ -1,127 +1,174 @@
 {
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
-        },
-        {
-            "before": ["z", "z"],
-            "commands": [":w"]
-        },
-        {
-            "before": ["z", "x"],
-            "commands": [":wq"]
-        },
-        {
-            "before": ["q", "q"],
-            "commands": [":q!"]
-        }
-
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-      {
-          "before": [">"],
-          "commands": [
-              "editor.action.indentLines"
-          ]
-      },
-      {
-          "before": ["<"],
-          "commands": [
-              "editor.action.outdentLines"
-          ]
-      },
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-      {
-          "before": [">"],
-          "commands": [
-              "editor.action.indentLines"
-          ]
-      },
-      {
-          "before": ["<"],
-          "commands": [
-              "editor.action.outdentLines"
-          ]
-      },
-      {
-          "before": ["\""],
-          "commands": [
-              "workbench.action.showCommands",
-          ]
-      },
-      {
-          "before": ["z", "z"],
-          "commands": [":w"]
-      },
-      {
-          "before": ["z", "x"],
-          "commands": [":wq"]
-      },
-      {
-          "before": ["q", "q"],
-          "commands": [":q!"]
-      },
-      {
-        "before": ["<leader>", "m"],
-        "commands": [
-            "bookmarks.toggle"
-        ]
-      },
-      {
-          "before": ["<leader>", "b"],
-          "commands": [
-              "bookmarks.list"
-          ]
-      }
-    ],
-    "rust-client.rustupPath": "/home/jiwon/.cargo/bin/rustup",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "explorer.confirmDelete": false,
-    "window.openFilesInNewWindow": "on",
-    "window.openWithoutArgumentsInNewWindow": "off",
-    "window.openFoldersInNewWindow": "on",
-    "window.zoomLevel": 1,
-    "breadcrumbs.enabled": true,
-    "python.jediEnabled": false,
-    "editor.lineNumbers": "relative",
-    "[python]": {
-        
-    },
-    "python.dataScience.sendSelectionToInteractiveWindow": false,
-    "python.pythonPath": "venv/lib/python3.6",
-    "explorer.confirmDragAndDrop": false,
-    "terminal.integrated.shell.linux": "/usr/bin/zsh",
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "window.menuBarVisibility": "toggle",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "files.exclude": {
-      "**/.classpath": true,
-      "**/.project": true,
-      "**/.settings": true,
-      "**/.factorypath": true
-    },
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
-    "files.autoSave": "off",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.sideBar.location": "right",
-    "sync.gist": "6985531f13cc32618941c27cb927d5a9",
-    "editor.fontFamily": "'Roboto Mono', 'Droid Sans Mono', 'monospace',  monospace, 'Droid sans Fallback'",
-    "code-runner.runInTerminal": true,
-    "code-runner.executorMap":
+  "vim.insertModeKeyBindings": [
     {
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ --std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "python": "python3 -u"
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     },
-    "extensions.ignoreRecommendations": false,
-    "java.requirements.JDK11Warning": false,
-
+    {
+      "before": [
+        "z",
+        "z"
+      ],
+      "commands": [
+        ":w"
+      ]
+    },
+    {
+      "before": [
+        "z",
+        "x"
+      ],
+      "commands": [
+        ":wq"
+      ]
+    },
+    {
+      "before": [
+        "q",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "\""
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "z",
+        "z"
+      ],
+      "commands": [
+        ":w"
+      ]
+    },
+    {
+      "before": [
+        "z",
+        "x"
+      ],
+      "commands": [
+        ":wq"
+      ]
+    },
+    {
+      "before": [
+        "q",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
+    }
+  ],
+  "rust-client.rustupPath": "/home/jiwon/.cargo/bin/rustup",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "explorer.confirmDelete": false,
+  "window.openFilesInNewWindow": "on",
+  "window.openWithoutArgumentsInNewWindow": "off",
+  "window.openFoldersInNewWindow": "on",
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": true,
+  "python.jediEnabled": false,
+  "editor.lineNumbers": "relative",
+  "[python]": {
+  },
+  "python.dataScience.sendSelectionToInteractiveWindow": false,
+  "python.pythonPath": "venv/lib/python3.6",
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "window.menuBarVisibility": "toggle",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+  "files.autoSave": "off",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.sideBar.location": "right",
+  "sync.gist": "6985531f13cc32618941c27cb927d5a9",
+  "editor.fontFamily": "'Roboto Mono', 'Droid Sans Mono', 'monospace',  monospace, 'Droid sans Fallback'",
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ --std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "python": "python3 -u"
+  },
+  "extensions.ignoreRecommendations": false,
+  "java.requirements.JDK11Warning": false
 }
