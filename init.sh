@@ -13,32 +13,35 @@ brew tap homebrew/cask-fonts
 # package list
 PACKAGES=(
   htop
-  fzf
-  ranger
-  autoconf
+#  fzf
+#  ranger
+#  autoconf
   wget
   zsh
-  nmap
-  automake
+#  nmap
+#  automake
   git
   jq
-  npm
-  node
-  watchman
-  sqlite3
-  pkg-config
-  python3
+#  npm
+#  node
+#  watchman
+#  sqlite3
+#  pkg-config
+#  python3
   tmux
   tree
   vim
   gdb
-  wget
-  docker
-  docker-machine
-  koekeishiya/formulae/yabai
-  koekeishiya/formulae/skhd
+#  docker
+#  docker-machine
+#  koekeishiya/formulae/yabai
+#  koekeishiya/formulae/skhd
   github/gh/gh
-  gtypist
+  svn
+  openvpn
+  alt-tab
+  bat
+#  gtypist
 )
 
 echo "Installing packages..."
@@ -51,29 +54,28 @@ APPLICATIONS=(
   iterm2
   alfred
   telegram
-  coconutbattery
+#  coconutbattery
   itsycal
   google-backup-and-sync
   visual-studio-code
   slack
-  intellij-idea
+#  intellij-idea
   vlc
   notion
-  android-studio
-  android-sdk
-  sublime-text
-  docker
-  ngrok
-  wireshark
-  istat-menus
+#  docker
+#  ngrok
+#  wireshark
+#  istat-menus
   microsoft-office
   microsoft-excel
   microsoft-powerpoint
-  pock
+  microsoft-outlook
+  microsoft-teams
+#  pock
 )
 
-echo "Installing applications..."
-brew cask install ${APPLICATIONS[@]}
+#echo "Installing applications..."
+#brew install --cask ${APPLICATIONS[@]}
 
 FONTS=(
   font-inconsolata
@@ -82,7 +84,7 @@ FONTS=(
 )
 
 echo "Installing fonts..."
-brew cask install ${FONTS[@]}
+brew install --cask ${FONTS[@]}
 
 echo "Configuring OSX..."
 # Show filename extensions by default
@@ -133,7 +135,7 @@ source ~/.zshrc
 
 echo "Downloading iterm theme..."
 # iterm theme
-wget https://raw.githubusercontent.com/JonathanSpeek/palenight-iterm2/master/palenight.itermcolors
+#wget https://raw.githubusercontent.com/JonathanSpeek/palenight-iterm2/master/palenight.itermcolors
 
 echo "Setting vim..."
 # vim

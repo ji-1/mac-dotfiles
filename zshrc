@@ -1,50 +1,25 @@
-# Path to your oh-my-zsh installation.
-ZSH_DISABLE_COMPFIX="true"
-export ZSH=/Users/$USER/.oh-my-zsh
+source /Users/ji1/antigen.zsh
 
-# Android
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-# export PATH=${PATH}:~/bin
-export PATH=$PATH:/usr/local/bin/mysql
-export PATH=$PATH:$HOME/bin:$PATH
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
 
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="agnoster"
-ZSH_THEME="refined"
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
 
-autoload -U promptinit; promptinit
-prompt pure
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+# Load the theme.
+antigen theme dieter
 
-source $ZSH/oh-my-zsh.sh
+# Tell Antigen that you're done.
+antigen apply
 
-# User configuration
-# export LANG=en_US.UTF-8
+export LSCOLORS=DxFxCxDxBxegedabagaced
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-alias tl='tmux ls'
-alias ta='tmux attach -t'
-alias tn='tmux new -s'
-alias tt='tmux ls'
-
-alias r='ranger'
-
+alias cat='bat --paging=never'
 
